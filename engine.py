@@ -20,6 +20,16 @@ __doc__ = """
     0,0  1,1  2,1  3,1  4,1  5,1  6,1  7,1 
     0,0  1,0  2,0  3,0  4,0  5,0  6,0  7,0 
 
+    Movement:
+
+        Pawn = +1y White or -1y Black unless eating then diagonal
+        Knight = (+2y +1x) or (+2y -1x) or (-2y +1x) or (-2y -1x) or (+2x +1y) or (+2x -1y) or (-2x +1y) or (-2x -1y)
+        Rook = (+ 1x to 8x) or (- 1x to 8x) or (+ 1y to 8y) or (- 1y to 8y)
+        Bishop = (+1 to 8x +1 to 8y) or (+1 to 8x -1 to 8y) or (+1 to 8y -1 to 8x) or (-1 to 8y -1 to 8x)
+        Queen = (Bishop and Rook)
+        King =  (+1x +1y) or (+1x -1y) or (-1x +1y) or (-1x -1y) or (+1x) or (-1x) or (+1y) or (-1y)
+
+
 """
 
 #Variable
@@ -28,3 +38,5 @@ __doc__ = """
 #def pieces color + piece
 
 #x,y moving on 8x8 grid while not going negative
+
+
