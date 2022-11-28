@@ -39,4 +39,31 @@ __doc__ = """
 
 #x,y moving on 8x8 grid while not going negative
 
+#Class for Piece Team, Type and if its killable
+
+class Piece:
+    def __init__(self, team, type, kill):
+        self.team = team
+        self.type = type
+        self.kill = kill
+#Pieces
+
+bPawn = Piece('b','Pawn')
+bRook = Piece('b','Rook')
+bKnight = Piece('b','Knight')
+bBishop = Piece('b','Bishop')
+bQueen = Piece('b','Queen')
+bKing = Piece('b','King')
+
+wPawn = Piece('w','Pawn')
+wRook = Piece('w','Rook')
+wKnight = Piece('w','Knight')
+wBishop = Piece('w','Bishop')
+wQueen = Piece('w','Queen')
+wKing = Piece('w','King')
+
+
+
+
+
 
